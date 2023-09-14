@@ -1,46 +1,7 @@
 /*
     Les elements du plateau de jeu se trouvent dans ce fichier(coordonnes des cases, couleurs, rayon des pions, pion, de)
 */ 
-import {_get, _refresh, _aleatoire,_cree_canvas} from './fonctions.js'
-
-export const THEMES = {
-    divertissement:{
-        question:{
-            0:"question 0",
-            1:"question 1",
-            2:"question 2",
-            3:"question 3",
-            4:"question 4",
-            5:"question 5",
-        },
-        reponse:{
-            0:["A0","B","C","D"],
-            1:["A1","B","C","D"],
-            2:["A2","B","C","D"],
-            3:["A3","B","C","D"],
-            4:["A4","B","C","D"],
-            5:["A5","B","C","D"],
-        }
-    },
-    sport:{
-        question:{
-            0:"question 0",
-            1:"question 1",
-            2:"question 2",
-            3:"question 3",
-            4:"question 4",
-            5:"question 5",
-        },
-        reponse:{
-            0:["A0","B","C","D"],
-            1:["A1","B","C","D"],
-            2:["A2","B","C","D"],
-            3:["A3","B","C","D"],
-            4:["A4","B","C","D"],
-            5:["A5","B","C","D"],
-        }
-    }
-}
+import {_get, _rafraichie, _aleatoire,_cree_canvas} from './fonctions.js'
 
 export const  COULEURS = ["pas de joueur 0","green","red","blue","rgb(199, 199, 0)"]; //rgb(199, 199, 0) = jaune
 export const RAYON_PIONS = 5;

@@ -8,9 +8,15 @@ export function _get(elem){
 export function _getAll(elem){
     return document.querySelectorAll(elem)
 }
-export function _refresh(){
+export function _rafraichie(){
     location.reload();
-} 
+}
+export function _attend(duree){
+    const t = Date.now();
+    while(Date.now() - t < duree){
+
+    }
+}
 export function _aleatoire(max,min){
     //genere un nombre entier aleatoire entre max et min (max et min sont inclus) 
     return Math.floor(Math.random() * (max-min+1)) + min;
@@ -46,7 +52,7 @@ export function _cree_canvas(){
     ctx.lineWidth = 0.3;
     ctx.font = "2px";
     //x
-    for(let i=0;i<=width;i+=406){
+    for(let i=0;i<=width;i+=159){
         ctx.beginPath();
         ctx.moveTo(i,0);
         ctx.lineTo(i,height);

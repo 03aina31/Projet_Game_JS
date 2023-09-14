@@ -3,7 +3,7 @@
  */
 
 import {Pion, De, COULEURS, RAYON_PIONS as R_PIONS} from './modules/elements.js';
-import {_get, _getAll, _cree_canvas, _aleatoire} from './modules/fonctions.js'
+import {_get, _getAll, _cree_canvas, _aleatoire, _attend} from './modules/fonctions.js'
 import { COORD_MAP as Map } from './donnees/coordonnes.js';
 import {THEMES} from './donnees/questions.js'
 //import Questions from './donnees/questions.json' assert {type:'json'}
@@ -20,7 +20,6 @@ canvas.addEventListener("mousemove", function(e){
 })
 
 //---------------------------------------------------------Debut du jeu-------------------------------------------------------
-
 
 let vert = new Pion(Map[0], R_PIONS, COULEURS[1]),
     rouge = new Pion(Map[16], R_PIONS, COULEURS[2]),
@@ -57,34 +56,34 @@ function _qui_commence(){
                 case val_de_depart[1]: {
                     setTimeout(function(){
                         div_de.innerHTML = "Joueur: "+ 1+" commence";
-                    },1000);
+                    },1000)
                     joueur_en_cours = 1;
                     _jeu();
-                    return;
+                    break;
                 }
                 case val_de_depart[2]: {
                     setTimeout(function(){
                         div_de.innerHTML = "Joueur: "+ 2+" commence";
-                    },1000);
+                    },1000)
                     joueur_en_cours =  2;
                     _jeu();
-                    return;
+                    break;
                 };
                 case val_de_depart[3]: {
                     setTimeout(function(){
                         div_de.innerHTML = "Joueur: "+ 3+" commence";
-                    },1000);
+                    },1000)
                     joueur_en_cours =  3;
                     _jeu();
-                    return;
+                    break;
                 };
                 case val_de_depart[4]: {
                     setTimeout(function(){
                         div_de.innerHTML = "Joueur: "+ 4+" commence";
-                    },1000);
+                    },1000)
                     joueur_en_cours =  4;
                     _jeu();
-                    return;
+                    break;
                 };
             }   
         }
@@ -96,14 +95,12 @@ function _poser_question(){
     let indice = _aleatoire(5,0);
     if(theme_courant == THEMES.divertissement){
         console.log("theme_courant = divertissement");
-        setTimeout(function(){
-            div_question.innerHTML = THEMES.divertissement.question[indice];
-            div_choix1.innerHTML = THEMES.divertissement.reponse[indice][0];
-            div_choix2.innerHTML = THEMES.divertissement.reponse[indice][1];
-            div_choix3.innerHTML = THEMES.divertissement.reponse[indice][2];
-            div_choix4.innerHTML = THEMES.divertissement.reponse[indice][3];
-        },2500);
-        
+        _attend(2500);
+        div_question.innerHTML = THEMES.divertissement.question[indice];
+        div_choix1.innerHTML = THEMES.divertissement.reponse[indice][0];
+        div_choix2.innerHTML = THEMES.divertissement.reponse[indice][1];
+        div_choix3.innerHTML = THEMES.divertissement.reponse[indice][2];
+        div_choix4.innerHTML = THEMES.divertissement.reponse[indice][3];    
     }
     let choix_selectionne;
     let liste_choix = _getAll(".choix");
@@ -152,11 +149,10 @@ function _poser_question(){
     })
 }
 }
-    //-------Fonction principale:
+//-------Fonction principale:
 function _jeu(){
     console.log("JEUU!!")
     _poser_question();  
-    
 }
 
 
