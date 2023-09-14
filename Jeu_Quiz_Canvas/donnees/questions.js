@@ -1,0 +1,77 @@
+export const THEMES = {
+    divertissement :{
+        question : {
+            0:  'Dans quel film peut-on entendre la replique:"Le coeur d\'une  femme est un océan de secrets"?',
+            1:  'Que désigne le "Coeur de l\' océan"dans le film Titanic ?',
+            2:  "Combien y a-t-il d\' amis principaux dans l' émission de télévision Friends ?",
+            3:  "Quel personnage de Friends a abandonné son fiancé au pied de l' autel au tout début de la série ?",
+            4:  "Quel superhéros combat le Bouffon vert?",
+            5:  "Quel créateur de Spider-man fait une apparition éclair dans le film de 2002 mettant en vedette ce superhéros? ",
+            6:  'Quel film de 1978 avait pour slogan: "Vous allez croire qu\' un homme peut voler?',
+            7:  'Comment était appelé Superman lorsqu\'il n\' était q\' un bébé sur la planète Krypton?',
+            8:  'A l\' origine, que représente "La Panthère rose" dans les films mettant en vedette Peter Sellers?',
+            9:  'Quel est le nom de trois lettres de la ligne de vêtements de Jennifer Lopez?',
+            10: 'De quelle couleur est Shrek?',
+            11: 'Quel animal est le meilleur ami de Shrek?',
+            12: 'Quel est le titre complet du deuxième film des Pirates des Caraïbes?',
+            13: 'Que tient Johnny Depp dans sa main sur l\'affiche publicitaire du film Pirates des Caraïbes :Le coffre du mort?',
+            14: 'Quel superhéros est aussi connu sous lenom de Bruce Wayne?',
+            
+        },
+        reponse : {
+            0:  ["Titanic","N' oubli jamais","Eternal Sunshine","Nos etoiles contraires"],
+            1:  ["Un diamant","Un or","Une argent","Un saphir"],
+            2:  ["Six","Cinq","Sept","Quatre"],
+            3:  ["Rachel Green","Ross Geller","Monica Geller","Phoebe Buffay"],
+            4:  ["Spider-man","Superman","Batman","Flash"],
+            5:  ["Stan Lee","Andrew Adamson","Tex Avery","Ralph Bakshi"],
+            6:  ["Superman","Green Lantern","Aquaman","Batman"],
+            7:  ["Kal-El","Jonathan Kent","Jor-El","Clark Kent"],
+            8:  ["Un diamant ","Une Panthère","Une livre","Un bijou"],
+            9:  ["JLo","BTi","RXa","PLos"],
+            10: ["Vert","Bleue","Violet","Noire"],
+            11: ["L'âne","Le chat","Le Dragon","L'oie"],
+            12: ["Le coffre du mort","La malédiction de BlackPearl","La fontaine de Jouvence","La Vengeance de Salazar"],
+            13: ["Un pistolet","Une épée","Un chapeau","Une carte"],
+            14: ["Batman","Superman","Aquaman","Flash"],
+
+  
+        }
+    },
+    Geographie:{
+        question: {
+            0:  'Quelle montagne est appelée Sagarmatha au Népal c\'est-à-dire"lefront du ciel"?',
+            1:  'Parmi les 10 plus hautes montagnes du monde,combien se trouvent en Asie?',
+            2:  'Quelle planète posséderait la plus haute montagne du système solaire?',
+            3:  'Quel désert entoure LasVegas?',
+            4:  'Quel personnage dans Christian Andersen est assis sur le bord de l\'eau à Copenhague?',
+            5:  'Quel jeu de construction est le thème d\'un parc d\'attractions danois?',
+            6:  'De quelle couleur est larox du drapeau finlandais?',
+            7:  'Quel produit a déjà été extrait à Salzbourg?',
+            8:  'Quelle est la capitale de la Tunisie?',
+            9:  'Quel produit correspond à environ 75% des exportations islandaises?',
+            10: 'En Islande,qu\'est-ce qui était interrompu pendant le mois de juillet et ce,jusqu \'en 1983,et tous les jeudis jusqu\'en 1987?',
+            11: 'Quel corps céleste apparaît dans le triangle blanc du drapeau du Djibouti?',
+            12: 'Quelle est la principale religion au Djibouti?',
+            13: 'Quel pays d\'Amérique du Sud porte le nom de Christophe Colomb?',
+            14: 'Qu\'a-t-on aboli en Colombie en 1849?',           
+        },
+        reponse : {
+            0:  ["L'Everest","Les Alpes","Les Pyrénées","Les Vosges"],
+            1:  ["10","1","5","7"],
+            2:  ["Mars","Jupiter","Venus","Terre"],
+            3:  ["Le désert des Mojaves","Le désert d'Arabie","Le désert de Gobi","Le désert de Patagonie"],
+            4:  ["La petite sirène","Fantasia","La Belle et le Clochard","L'étrange Noël de monsieur Jack"],
+            5:  ["Lego","UNO","Monopoly","Cartes"],
+            6:  ["Bleue","Rouge","Noire","Grenat"],
+            7:  ["Le sel","Le sucre","Le poivre","Le curcuma"],
+            8:  ["Tunis","Paris","Antananarivo","Tokyo"],
+            9:  ["Le poisson","La vanille","Le riz","Le cacao"],
+            10: ["La télévision","La radio","Le téléphone","L'ordinateur"],
+            11: ["Une étoile","Un soleil","Une Lune","Un astre"],
+            12: ["L'islam","Le christianisme","Le Bouddhisme","Le taoïsme"],
+            13: ["La colombie","L'Argentine","L'Uruguay","Le Brésil"],
+            14: ["L'esclavage","La colonisation","La peine de mort","Le racisme"],
+        }
+    }
+}
