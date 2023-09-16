@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font: 15px arial black;
+    color: black;
+    text-decoration: none; 
+    overflow: hidden;
+}
+
+#canvas{
+    width: 100vw;
+    height: 100vh;
+}
+
+#logo{
+    position: relative;
+    top: -80vh;
+    width: 15%;
+    height: 40%;
+    transition: top 2s ease;
+}
+
+.navbar{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar{
+    position: relative;
+    bottom: -80vh;
+    transition: bottom 2s ease;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid grey;
+    border-radius: 20px;
+    width: 10vw;
+    height: 4vh;
+    margin: 10px;
+    padding: 10px;
+}
