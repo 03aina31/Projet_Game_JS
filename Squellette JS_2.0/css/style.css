@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'font-1';
+    src: url(../font/Nunito/static/Nunito-Regular.ttf);
+}
+@font-face {
+    font-family: 'font-2';
+    src: url(../font/DM_Sans/static/DMSans_18pt-Regular.ttf);
+}
+body{
+    display: flex;    
+    justify-content: center;
+}
+#timer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: chartreuse;*/
+    background-color: aquamarine;
+    width: 40vw;
+    font-family: 'font-2';
+    font-size: 1em;
+    height: 15vh;
+}
+#conteneur{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(8, 1fr);
+    width: 60vw;
+    height: 50vh;
+    position: relative;
+    top: 17vh;
+    border-radius: 20px;
+    background-color: rgb(240, 116, 33);
+}
+
+#qst{
+    grid-row: 2/4;
+    grid-column: 2/8;
+    background-color: rgb(209, 202, 194);
+    display: flex;
+    font-family: 'font-2';
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#bt0{
+    grid-row: 4/6;
+    grid-column: 2/5;
+    margin: 10px;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(75, 49, 24);
+    font-family: 'font-2';
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(201, 201, 201);
+}
+#bt1{
+    grid-row: 4/6;
+    grid-column: 5/8;
+    margin: 10px;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(75, 49, 24);
+    font-family: 'font-2';
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(201, 201, 201);
+}
+#bt2{
+    grid-row: 6/8;
+    grid-column: 2/5;
+    margin: 10px;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(75, 49, 24);
+    font-family: 'font-2';
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(201, 201, 201);
+}
+#bt3{
+    grid-row: 6/8;
+    grid-column: 5/8;
+    margin: 10px;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(75, 49, 24);
+    font-family: 'font-2';
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(201, 201, 201);
+}
+
+#btr{
+    position: absolute;
+    top: 85vh;
+    left: 85vw;
+    font-family: 'font-2';
+    border: none;
+    border-radius: 10px;
+    /*padding: 20px 40px;*/
+    width: 10vw;
+    height: 10vh;
+    transition: all 0.4s;
+    cursor: pointer;
+    background-color: rgb(240, 116, 33);
+    color: rgb(201, 201, 201);
+}
+#valid{
+    position: absolute;
+    background-color: transparent;
+    width: 40vw;
+    height: 15vh;
+    font-family: 'font-2';
+    font-size: 2.5em;
+    top: 35vh;
+    display: flex;
+    z-index: -1;
+    align-items: center;
+    justify-content: center;
+}
+#mess{
+    color: rgb(168, 151, 151);
+}
