@@ -1,0 +1,210 @@
+@font-face{
+    font-family: 'Russ';
+    src: url(../font/font-family/RussoOne-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Russ;
+    color: black;
+    text-decoration: none; 
+    overflow: hidden;
+}
+
+.conteneur-aide{
+    position: absolute;
+    top: -55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60vw;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    border: 2px solid black;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 2s ease;
+}
+
+.jeu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #888888;
+}
+
+.regle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bordg,.bordd{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid grey;
+    border-radius: 200px;
+    transition: all 2s ease;
+}
+
+#bord1{
+    background-color: rgb(250, 149, 166);
+    top: 0;
+    left: -50%;
+    transform: translate(-50%,-50%);
+}
+
+#bord2{
+    background-color: yellow;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%,-50%);
+}
+
+#bord3{
+    background-color: green;
+    top: 100%;
+    left: -50%;
+    transform: translate(-50%,-50%);
+}
+
+#bord4{
+    background-color: rgb(148, 0, 148);
+    top: 0;
+    left: 150%;
+    transform: translate(-50%,-50%);
+}
+
+#bord5{
+    background-color: orangered;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%,-50%);
+}
+
+#bord6{
+    background-color: rgb(51, 180, 255);
+    top: 100%;
+    left: 150%;
+    transform: translate(-50%,-50%);
+}
+
+i,.fa-dog{
+    position: absolute;
+    color: grey;
+    opacity: 0;
+    transition: all 8s ease;
+}
+
+/*font pour divertissement*/
+.fa-masks-theater{
+    top: 4%;
+    left: 13%;
+}
+
+.fa-palette{
+    top: 8%;
+    left: 8%;
+}
+
+.fa-book{
+    top: 20%;
+    left: 10%;
+}
+
+/*font pour histoire*/
+.fa-pen-nib{
+    top: 38%;
+    left: 12%;
+}
+
+.fa-landmark{
+    top: 50%;
+    left: 8%;
+    transform: translate(0,-50%);
+}
+
+.fa-monument{
+    top: 59%;
+    left: 12%;
+    transform: translate(0,-50%);
+}
+
+/*font pour science*/
+.fa-flask{
+    top: 82%;
+    left: 8%;
+}
+
+.fa-dog{
+    top: 90%;
+    left: 13%;
+}
+
+.fa-globe{
+    top: 70%;
+    left: 10%;
+}
+
+/*font pour litterature*/
+.fa-paintbrush{
+    top: 4%;
+    right: 13%;
+}
+
+.fa-book-open{
+    top: 8%;
+    right: 8%;
+}
+
+.fa-wand-magic-sparkles{
+    top: 20%;
+    right: 10%;
+}
+
+/*font pour sport*/
+
+.fa-basketball{
+    top: 38%;
+    right: 12%;
+}
+
+.fa-baseball-bat-ball{
+    top: 50%;
+    right: 8%;
+    transform: translate(0,-50%);
+}
+
+.fa-person-running{
+    top: 59%;
+    right: 12%;
+    transform: translate(0,-50%);
+}
+
+/*font pour geographie*/
+.fa-earth-africa{
+    top: 82%;
+    right: 8%;
+}
+
+.fa-mountain{
+    top: 90%;
+    right: 13%;
+}
+
+.fa-tree{
+    top: 70%;
+    right: 10%;
+}
+
+.boutton{
+    box-shadow: 5px 5px 10px #888888;
+    transition: all .3s ease;
+}
+
+.boutton:hover{
+    box-shadow: none;
+}

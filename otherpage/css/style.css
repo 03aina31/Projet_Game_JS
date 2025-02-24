@@ -1,0 +1,149 @@
+
+@font-face {
+    font-family: 'font-2';
+    src: url(../../font/font-family/RussoOne-Regular.ttf);
+}
+*{
+    font-family: 'font-2';
+}
+#timer{
+    position: absolute;
+    top:5vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: chartreuse;*/
+    width: 100%;
+    font-family: 'font-2';
+    font-size: 2em;
+    height: 15vh;
+}
+#nuage{
+    transform: translateY(-100%);
+    transition: all 1s;
+    height:100vh;
+    text-align: center;
+    width:100%;
+    position: absolute;
+    top: 8vh;
+}
+/*
+#nuage.bleu{
+    background:url('../Images/bleu.png');
+    background-size: 50%;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+*/
+#conteneur{
+    transition: all 1s;
+    transition: background 1.5s;
+    transform: translateX(-150%);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(8, 1fr);
+    position: relative;
+    top: 15%;
+    margin: auto;
+    width: 60vw;
+    height: 50vh;
+    border-radius: 200px;
+}
+.conteneur2{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(219, 211, 211, 0.731);
+    text-align: center;
+    color: rgb(43, 42, 42);
+    width: max-content;
+    border-radius: 20px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#qst{
+    grid-row: 2/4;
+    grid-column: 2/8;
+    background-color: rgb(234, 228, 221);
+    text-align: center;
+    font-family: 'font-2';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.bt_rep{
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(241, 175, 113);
+    font-family: 'font-2';
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.bt_rep:hover{
+    background-color: rgb(162, 101, 44);
+}
+#bt0{
+    grid-row: 4/6;
+    grid-column: 2/5;
+}
+#bt1{
+    grid-row: 4/6;
+    grid-column: 5/8;
+}
+#bt2{
+    grid-row: 6/8;
+    grid-column: 2/5;
+}
+#bt3{
+    grid-row: 6/8;
+    grid-column: 5/8;
+}
+
+#btr{
+    position: absolute;
+    top: 85vh;
+    left: 85vw;
+    font-family: 'font-2';
+    border: none;
+    border-radius: 10px;
+    /*padding: 20px 40px;*/
+    width: 10%;
+    height: 10vh;
+    transition: all 0.4s;
+    cursor: pointer;
+    background-color: rgb(240, 116, 33);
+    color: rgb(201, 201, 201);
+}
+#valid{
+    position: absolute;
+    background-color: transparent;
+    width: 40vw;
+    height: 15vh;
+    font-family: 'font-2';
+    font-size: 2.5em;
+    top: 35vh;
+    left: 30vw;
+    display: flex;
+    z-index: -1;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+#mess{
+    color: rgb(168, 151, 151);
+    width: 100%;
+    text-align: center;
+}

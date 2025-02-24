@@ -1,0 +1,10 @@
+//Coordonnes des joueurs avant de commencer
+export const COORD_MAP = {
+    P1: [131,130],
+    P2: [470,130],
+    P3: [470,470],
+    P4: [131,470],
+}
+export const  COULEURS = ["green","red","blue","yellow"];
+export const RAYON_PIONS = 15;
+//export let joueur_en_cours = 0;//Le premier joueur qui joue est le joueur de couleur verte càd COULEUR[0]

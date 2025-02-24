@@ -1,0 +1,58 @@
+@font-face{
+    font-family: 'Russ';
+    src: url(../../font/font-family/RussoOne-Regular.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Russ';
+    text-align: center;
+}
+body{
+    margin: auto;
+    margin-top: 1%;
+}
+#canvas{
+    text-align: center;
+    display: block;
+    margin: auto;
+    background: url("fond1.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    color:rgb(13, 111, 36);
+    padding: 0;
+}
+#div_de{
+    text-align: center;
+    border: 2px black solid;
+    width:5%;
+    height: 5vh;
+}
+#coordonnees{
+    position:fixed;
+    top: 3%;
+    left: 3%;
+    border:1px red solid;
+}
+#choix1{
+    cursor: pointer;
+}
+.boxPion{
+    width: 2.5%;
+    position: absolute;
+    transition: all 1s;
+}
+.pion{
+    width: 100%;
+    z-index: 20;
+}
+.plateau{
+    width: 98%;
+    height:95vh;
+    margin: auto;
+}
+.plateau>img{
+    width: 100%;
+    height: 100%;
+}

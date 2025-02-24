@@ -1,0 +1,200 @@
+@font-face{
+    font-family: 'Russ';
+    src: url(../font/font-family/RussoOne-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Russ;
+    color: black;
+    text-decoration: none; 
+    overflow: hidden;
+}
+
+/*conteneur anle izy rehetra*/ 
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80vw;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    border: 2px solid black;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.nombrejoueur{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+#nombre1,#nombre2,#nombre3,#nombre4{
+    display: flex;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+/*choix de couleur multi*/
+.choix{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#nom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    background-image: url("../img/jaune.png");
+    background-size: cover;
+}
+
+#p2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    background-image: url("../img/bleu.png");
+    background-size: cover;
+}
+
+#p3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    background-image: url("../img/vert.png");
+    background-size: cover;
+}
+
+#p4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    background-image: url("../img/violet.png");
+    background-size: cover;
+}
+
+#play{
+    position: relative;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+input{
+    position: relative;
+    display: flex;
+    top: 25px;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    height: 30%;
+    border: 3px solid grey;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+input:focus, textarea:focus{
+    border-color: black;
+    box-shadow: 0 0 8px ;
+}
+ 
+#p1 i,#p2 i,#p3 i,#p4 i{
+    position: relative;
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
+    padding: 5px 5px;
+    top: -3px;
+    left: -53px;
+    color: black;
+    transition: .5s;
+}
+
+#p1 input:focus + i{
+    background-color: yellow;
+}
+
+#p2 input:focus + i{
+    background-color:blue
+}
+
+#p3 input:focus + i{
+    background-color:green
+}
+
+#p4 input:focus + i{
+    background-color: rgb(109, 0, 109);
+}
+
+.boutton{
+    box-shadow: 5px 10px 18px #000000;
+    transition: all .3s ease;
+}
+
+.boutton:hover{
+    box-shadow: none;
+}
+
+.fa-circle-arrow-left{
+    color: #313030;
+    border-radius: 200px;
+    box-shadow: 5px 5px 10px #313030;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+}
+
+.fa-circle-arrow-left:hover{
+    box-shadow: none;
+}
+
+.fa-question-circle {
+    color: #313030;
+    background-color: transparent;
+    border-radius: 200px;
+    box-shadow: 5px 5px 10px #313030;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+}
+
+.fa-question-circle :hover{
+    box-shadow: none;
+}
